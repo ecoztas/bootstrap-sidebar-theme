@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Sidebar - Theme</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public/libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/styles/theme.css">
+    <body>
+      <div id="l_page">
+        <div id="l_page__sidebar" class="bg-primary">
+          <div class="text-center text-white">
+            <h3>Sidebar</h3>
+          </div>
+        </div>
+        <div id="l_page__content">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a href="#!" id="launcher" class="btn btn-primary">Sidebar</a>
+            <button type="button" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation" data-target="#main-menu" data-toggle="collapse" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div id="main-menu" class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="#!" class="nav-link">Home<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a href="#!" class="nav-link">Link</a></li>
+                <li class="nav-item dropdown"><a href="#" id="navbarDropdown" aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" role="button" class="nav-link dropdown-toggle">Dropdown</a>
+                  <div aria-labelledby="navbarDropdown" class="dropdown-menu s_animate s_slideIn"><a href="#" class="dropdown-item">Action</a><a href="#" class="dropdown-item">Another action</a>
+                    <div class="dropdown-divider"></div><a href="#" class="dropdown-item">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item"><a href="#!" aria-disabled="true" tabindex="-1" class="nav-link disabled">Disabled</a></li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input type="search" aria-label="Search" placeholder="Search" class="form-control mr-sm-2">
+                <button type="submit" class="btn btn-primary my-2 my-sm-0">Search</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <script src="public/libraries/jquery/jquery-3.5.1.min.js"></script>
+      <script src="public/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="public/scripts/theme.js"></script>
+    </body>
+  </head>
+</html>

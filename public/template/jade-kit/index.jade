@@ -1,0 +1,14 @@
+//- Include variables
+//- ----------------------------------------------------------------------------
+include application/_variables.jade
+
+//- Extends laout (s)
+extends application/layouts/_default.jade
+
+block page-title
+    title="Bootstrap Sidebar - Theme"
+
+block body-content
+    div(id="l_page")
+        include application/modules/_sidebar.jade
+        include application/modules/_content.jade

@@ -1,0 +1,23 @@
+// Page layouts
+// -----------------------------------------------------------------------------
+#l_page {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+
+    #l_page__sidebar {
+        min-width: $sidebar-width;
+        max-width: $sidebar-width;
+        min-height: $sidebar-height;
+        transition: $transition;
+    }
+
+    #l_page__content {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+#l_page__sidebar.launch {
+    margin-left: -$sidebar-width;
+}
